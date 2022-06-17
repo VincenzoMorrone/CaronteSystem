@@ -30,9 +30,6 @@ def check_old_folder()->bool:
 def logger_config(name=None):
     import logging
     import colorlog
-    """
-        Setup the logging environment
-    """
     if not name:
         log = logging.getLogger()  # root logger
     else:
@@ -79,11 +76,8 @@ def get_def():
     except:
         logging.error("Login fallito")
 
-    # select a mailbox (in this case, the inbox mailbox)
-    # use imap.list() to get the list of mailboxes
     status, messages = imap.select('"{}"'.format("INBOX/FileScan Report"))
 
-    # total number of emails
     messages = int(messages[0])
     N = messages
     DAYS = 15
