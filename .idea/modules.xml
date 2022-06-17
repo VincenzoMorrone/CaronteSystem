@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SharePointModule.iml" filepath="$PROJECT_DIR$/.idea/SharePointModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CaronteSystem.iml" filepath="$PROJECT_DIR$/.idea/CaronteSystem.iml" />
     </modules>
   </component>
 </project>

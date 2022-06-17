@@ -59,16 +59,16 @@ def getEmailDatetime(data):
     dataCorretta = datetime.datetime.strptime(data1, '%d %b %Y %H:%M:%S')
     return dataCorretta
 
-def get_def():
-    username = os.environ['username']
-    password = os.environ['password']
+def get_access_and_download():
+    username = "lab4@whysecurity.it"
+    password = "1234Vin"
     results = "["
     users = []
 
     def clean(text):
         return "".join(c if c.isalnum() else "_" for c in text)
 
-    imap = imaplib.IMAP4_SSL(os.environ['imap'])
+    imap = imaplib.IMAP4_SSL("outlook.office365.com")
     # authenticate
     try:
         imap.login(username, password)
@@ -159,7 +159,7 @@ def get_def():
     stringMaker = ""
     #print(len(folderNameArray))
     for folder in folderNameArray:
-        print(folder + '/File Details by Category.csv')
+        logging.info(folder + '/File Details by Category.csv')
         with open(folder + '/File Details by Category.csv') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             c = 0
@@ -212,6 +212,6 @@ if __name__ == '__main__':
     logging.info("CaronteSystem")
     if(check_old_folder()):
         logging.warning("Elimino vecchie cartelle e-mail, l'ultima esecuzione software potrebbe non aver concluso bene.")
-    get_def()
+    get_access_and_download()
     logging.info("_*^*_| Carone has finished his work |_*^*_")
 
