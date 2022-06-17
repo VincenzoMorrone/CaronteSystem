@@ -60,8 +60,8 @@ def getEmailDatetime(data):
     return dataCorretta
 
 def get_def():
-    username = "lab4@whysecurity.it"
-    password = "1234Vin"
+    username = os.environ['username']
+    password = os.environ['password']
     results = "["
     users = []
 
@@ -80,7 +80,7 @@ def get_def():
 
     messages = int(messages[0])
     N = messages
-    DAYS = 15
+    DAYS = 30
     logging.info("Saranno scaricati " + str(N) + " messaggi degli ultimi " + str(DAYS) + " giorni.")
 
     for i in range(messages, messages - N, -1):
