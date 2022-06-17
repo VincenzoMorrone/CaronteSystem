@@ -68,7 +68,7 @@ def get_def():
     def clean(text):
         return "".join(c if c.isalnum() else "_" for c in text)
 
-    imap = imaplib.IMAP4_SSL("outlook.office365.com")
+    imap = imaplib.IMAP4_SSL(os.environ['imap'])
     # authenticate
     try:
         imap.login(username, password)
