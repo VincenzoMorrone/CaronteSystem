@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d3cf6d67-f3dc-43ea-94c0-8793c150cef7" name="Changes" comment="1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/execution.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zbx.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +87,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="GIORNO_SETTIMANA" value="0" />
+        <env name="GIORNO_SETTIMANA" value="0,1,2,3,4,5,6" />
         <env name="ORA" value="10" />
         <env name="MINUTI" value="27" />
       </envs>
@@ -160,9 +154,9 @@
     </configuration>
     <list>
       <item itemvalue="Python.execution" />
-      <item itemvalue="Python.zbx" />
       <item itemvalue="Python.main1" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.zbx" />
     </list>
     <recent_temporary>
       <list>
@@ -196,6 +190,25 @@
       <workItem from="1655478527249" duration="394000" />
       <workItem from="1655708070918" duration="5239000" />
       <workItem from="1655713478824" duration="1242000" />
+      <workItem from="1655716817509" duration="5000" />
+      <workItem from="1655729295457" duration="7000" />
+      <workItem from="1655799264328" duration="711000" />
+      <workItem from="1656076265670" duration="644000" />
+      <workItem from="1656495549054" duration="669000" />
+      <workItem from="1656923872054" duration="918000" />
+      <workItem from="1657177925845" duration="223000" />
+      <workItem from="1657178400426" duration="999000" />
+      <workItem from="1657185910879" duration="320000" />
+      <workItem from="1657267423577" duration="19000" />
+      <workItem from="1658505555342" duration="504000" />
+      <workItem from="1658819465719" duration="10000" />
+      <workItem from="1658827940899" duration="5000" />
+      <workItem from="1658904949313" duration="5000" />
+      <workItem from="1658918526783" duration="5000" />
+      <workItem from="1658927970196" duration="4000" />
+      <workItem from="1659704463191" duration="596000" />
+      <workItem from="1659705828747" duration="5000" />
+      <workItem from="1662620810189" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="1.0">
       <created>1655458400522</created>
@@ -260,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655478867309</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.1">
+      <created>1655715546503</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655715546503</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,12 +311,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0" />
+    <MESSAGE value="1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CaronteSystem$main__1_.coverage" NAME="main1 Coverage Results" MODIFIED="1655713625195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../CaronteSystem" />
     <SUITE FILE_PATH="coverage/pythonProject4$zbx.coverage" NAME="zbx Coverage Results" MODIFIED="1655116123918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject4$main.coverage" NAME="main Coverage Results" MODIFIED="1655384008053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CaronteSystem$main.coverage" NAME="main Coverage Results" MODIFIED="1655713683154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../CaronteSystem" />
+    <SUITE FILE_PATH="coverage/CaronteSystem$main.coverage" NAME="main Coverage Results" MODIFIED="1657186224064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../CaronteSystem" />
   </component>
 </project>
